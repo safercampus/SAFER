@@ -38,3 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Make it easy to set classes on active nav links
+gem 'nav_lynx'
+
+# Easy static pages with layout
+gem 'high_voltage', '~> 2.2.1'

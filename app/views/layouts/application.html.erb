@@ -1,14 +1,131 @@
 <!DOCTYPE html>
-<html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>SAFER</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://jasny.github.io/bootstrap/dist/css/jasny-bootstrap.min.css">
+  <link rel="stylesheet" href="http://jasny.github.io/bootstrap/assets/css/docs.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to '/', class: "navbar-brand" do %>
+        <%= image_tag 'draft-pennant-logo-blue.png', :class => 'logo' %> SAFER
+      <% end %>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <%= nav_link_to 'THE BASICS', page_path('basics'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        <%= nav_link_to 'POLICY', page_path('policy'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        <%= nav_link_to 'ACTIVISM', page_path('activism'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        <%= nav_link_to 'PRESS', page_path('press'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        <%= nav_link_to 'ABOUT', page_path('about'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+      </ul>
+      <!--<form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to 'Request a teach-in', page_path('teach-in'), :class => 'btn btn-default' %>
+        </li>
+        <li>  
+          <%= link_to 'Donate', page_path('donate'), :class => 'btn btn-default' %>
+        </li>
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>
 
 <%= yield %>
 
+<div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p><b>School Sexual Assault</b></p>
+          <%= link_to 'The Basics', page_path('basics') %><br>
+          <%= link_to 'Policy', page_path('policy') %><br>
+          <%= link_to 'Activism', page_path('activism') %>
+        </div>
+        <div class="col-md-2">
+          <p><b>About Us</b></p>
+          <%= link_to 'About', page_path('about') %><br>
+          <%= link_to 'Press', page_path('press') %><br>
+          <%= link_to 'Terms', page_path('terms') %>
+        </div>
+        <div class="col-md-2">
+          <p><b>Community</b></p>
+          <a href="">Twitter</a><br>
+          <a href="">Facebook</a><br>
+          <%= link_to 'Contact Us', page_path('contact') %>
+        </div>
+        <div class="col-md-5">
+          <p><b>Join Our Newsletter!</b></p>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="" placeholder="Name">
+              </div>
+              <div class="col-sm-3">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="small">&copy; 2014 Students Active For Ending Rape. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://jasny.github.io/bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+  <script src="http://jasny.github.io/bootstrap/assets/js/docs.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+ e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+ e.src='http://www.google-analytics.com/analytics.js';
+ r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
 </body>
 </html>

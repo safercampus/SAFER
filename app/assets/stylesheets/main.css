@@ -41,7 +41,7 @@ footer hr {
   margin-bottom: 0px;
 }
 .jumbotron h1, .jumbotron .h1 {
-  font-size: 38px;
+  font-size: 46px;
   margin-bottom: 16px;
 }
 .main-sections {
@@ -69,10 +69,15 @@ footer hr {
   padding-top: 20px;
 }
 
+h2[id], h3[id] {
+  padding-top: 55px;
+  margin-top: -10px;
+}
+
 /* @media */
 
 @media screen and (min-width: 992px) {
-  .bs-sidebar.affix {top: 40px;}
+  .bs-sidebar.affix {top: 10px;}
 }
 
 @media screen and (min-width: 768px) {

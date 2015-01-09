@@ -56,7 +56,7 @@ GEM
     multi_json (1.10.1)
     nav_lynx (1.1.1)
       rails (>= 3.1.0)
-    pg (0.17.1)
+    pg (0.18.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -114,7 +114,7 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.6.1)
+    uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 

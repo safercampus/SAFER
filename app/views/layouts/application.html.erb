@@ -6,15 +6,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://jasny.github.io/bootstrap/dist/css/jasny-bootstrap.min.css">
-  <link rel="stylesheet" href="http://jasny.github.io/bootstrap/assets/css/docs.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#sidenav" data-offset="20">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser.
     Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -35,26 +32,21 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <%= nav_link_to 'ABOUT', page_path('about'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
-				<%= nav_link_to 'BASICS', page_path('basics'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        <%= nav_link_to 'BASICS', page_path('basics'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
         <%= nav_link_to 'POLICY', page_path('policy'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
         <%= nav_link_to 'ACTIVISM', page_path('activism'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
         <%= nav_link_to 'PRESS', page_path('press'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
       </ul>
-      <!--<form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>-->
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to 'Request a teach-in', page_path('teach-in'), :class => 'btn btn-primary' %>
+          <p class="navbar-btn">
+            <%= link_to 'Request a teach-in', page_path('teach-in'), :class => 'btn btn-primary' %>
+          </p>
         </li>
-        <li>  
-          <%= link_to 'Donate', page_path('donate'), :class => 'btn btn-primary' %>
+        <li>
+          <p class="navbar-btn">
+            <%= link_to 'Donate', page_path('donate'), :class => 'btn btn-primary' %>
+          </p>
         </li>
       </ul>
     </div><!--/.navbar-collapse -->
@@ -108,25 +100,5 @@
       </div>
     </footer>
   </div>
-
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script src="http://jasny.github.io/bootstrap/dist/js/jasny-bootstrap.min.js"></script>
-  <script src="http://jasny.github.io/bootstrap/assets/js/docs.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                                                        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
- e=o.createElement(i);r=o.getElementsByTagName(i)[0];
- e.src='http://www.google-analytics.com/analytics.js';
- r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
 </body>
 </html>

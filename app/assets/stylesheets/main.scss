@@ -12,12 +12,21 @@ h1, h2, h3 {font-family: 'Pompiere', cursive;}
 
 /* Header and footer */
 .navbar {
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
+
+  .navbar-right li {
+    margin-left: 15px;
+  }
 }
 
-.navbar-default .navbar-brand {color:#56A7E9}
+.navbar-default .navbar-brand {
+  color: #56A7E9
+}
 
-.logo {height:20px;}
+.logo {
+  height:20px;
+  display: inline-block!important;
+}
 
 .navbar-nav>li>a.btn {
   margin-top: 6px;

@@ -3,9 +3,11 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: false,
+      skipTopList: false,
       title: '<i>Jump to...</i>',
       minimumHeaders: 3,
       headers: 'h1, h2, h3, h4, h5, h6',
+      listClass: "",
       listType: 'ol', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
       showSpeed: 'slow' // set to 0 to deactivate effect
@@ -48,7 +50,10 @@
 
     var level = get_level(headers[0]),
       this_level,
-      html = settings.title + " <"+settings.listType+">";
+      html = settings.title;
+    if (!settings.skipTopList) {
+      html += " <"+settings.listType+" class='"+settings.listClass+"'>";
+    }
     headers.on('click', function() {
       if (!settings.noBackToTopLinks) {
         window.location.hash = this.id;
@@ -70,13 +75,15 @@
       }
       else if (this_level > level) { // lower level than before; expand the previous to contain a ol
         for(i = this_level; i > level; i--) {
-          html += "<"+settings.listType+"><li>"
+          html += " <"+settings.listType+" class='"+settings.listClass+"'>";
         }
-        html += "<a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
+        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a></li>";
       }
       level = this_level; // update for the next one
     });
-    html += "</"+settings.listType+">";
+    if (!settings.skipTopList) {
+      html += "</"+settings.listType+">";
+    }
     if (!settings.noBackToTopLinks) {
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);

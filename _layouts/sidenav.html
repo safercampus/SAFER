@@ -14,12 +14,13 @@ layout: application
 
 <div class="container">
   <div class="row">
-    <nav class="col-xs-3" id="toc">
+    <nav class="col-xs-3" id="sidenav">
+      <ul class="nav nav-stacked" data-spy="affix" data-offset-top="211" data-offset-bottom="291">
+      </ul>
     </nav>
 
-      <div class="col-xs-9">
-        {{ content }}
-      </div>
+    <div class="col-xs-9">
+      {{ content }}
     </div>
   </div>
 </div>
@@ -27,8 +28,11 @@ layout: application
 <script src="{{ "/js/toc.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#toc').toc({
+    $('#sidenav ul').toc({
+      title: "",
+      skipTopList: true,
       listType: 'ul',
+      listClass: 'nav nav-stacked',
       noBackToTopLinks: true,
       minimumHeaders: 2,
       showSpeed: 0,

@@ -1,49 +1,97 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
 
 
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+body {
+  padding-top: 0px;
 }
 
+h1, h2, h3 {font-family: 'Pompiere', cursive;}
 
+/* Header and footer */
+.navbar {
+  margin-bottom: 0px;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+  .navbar-right li {
+    margin-left: 15px;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: #56A7E9
+}
+
+.logo {
+  height:20px;
+  display: inline-block!important;
+}
+
+.navbar-nav>li>a.btn {
+  margin-top: 6px;
+  margin-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+footer {
+  background-color: #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer hr {
+  border-color: grey;
+}
+
+/* Homepage */
+.jumbotron {
+  margin-bottom: 0px;
+}
+.jumbotron h1, .jumbotron .h1 {
+  font-size: 46px;
+  margin-bottom: 16px;
+}
+.main-sections {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Content */
+.header-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.main-content {
+  margin-bottom: 30px;
+}
+
+.next-section {
+  margin-top: 30px;
+}
+
+#section_1 {
+  padding-top: 20px;
+}
+
+h2[id], h3[id] {
+  padding-top: 55px;
+  margin-top: -10px;
+}
+
+/* @media */
+
+@media screen and (min-width: 992px) {
+  .bs-sidebar.affix {top: 10px;}
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 60px 0;
+  }
+
+}

@@ -2,15 +2,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>SAFER</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "/css/application.css" | prepend: site.baseurl }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
+
 <body data-spy="scroll" data-target="#sidenav" data-offset="20">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser.
@@ -25,35 +26,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to '/', class: "navbar-brand" do %>
-        <%= image_tag 'draft-pennant-logo-blue.png', :class => 'logo' %> SAFER
-      <% end %>
+      <a class="navbar-brand" href="/">
+        <img alt="Draft pennant logo blue" class="logo" src="/img/draft-pennant-logo-blue.png"> SAFER
+      </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <%= nav_link_to 'ABOUT', page_path('about'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
-        <%= nav_link_to 'BASICS', page_path('basics'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
-        <%= nav_link_to 'POLICY', page_path('policy'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
-        <%= nav_link_to 'ACTIVISM', page_path('activism'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
-        <%= nav_link_to 'PRESS', page_path('press'), {}, {:wrapper => 'li', :selected_class => 'active'} %>
+        {% for site_page in site.pages %}
+          {% if page.title %}
+            <li{% if page.url == site_page.url %} class="active"{% endif %}>
+              <a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <p class="navbar-btn">
-            <%= link_to 'Request a teach-in', page_path('teach-in'), :class => 'btn btn-primary' %>
+            <a class="btn btn-primary" href="/teach-in">Request a teach-in</a>
           </p>
         </li>
         <li>
           <p class="navbar-btn">
-            <%= link_to 'Donate', page_path('donate'), :class => 'btn btn-primary' %>
+            <a class="btn btn-primary" href="/donate">Donate</a>
           </p>
         </li>
       </ul>
-    </div><!--/.navbar-collapse -->
+    </div>
   </div>
 </div>
 
-<%= yield %>
+{{ content }}
 
 <div>
   <footer>
@@ -61,21 +64,21 @@
       <div class="row">
         <div class="col-md-3">
           <p><b>School Sexual Assault</b></p>
-          <%= link_to 'The Basics', page_path('basics') %><br>
-          <%= link_to 'Policy', page_path('policy') %><br>
-          <%= link_to 'Activism', page_path('activism') %>
+          <a href="/basics">The Basics</a>
+          <a href="/policy">Policy</a>
+          <a href="/activism">Activism</a>
         </div>
         <div class="col-md-2">
           <p><b>About Us</b></p>
-          <%= link_to 'About', page_path('about') %><br>
-          <%= link_to 'Press', page_path('press') %><br>
-          <%= link_to 'Terms', page_path('terms') %>
+          <a href="/about">About</a>
+          <a href="/press">Press</a>
+          <a href="/terms">Terms</a>
         </div>
         <div class="col-md-2">
           <p><b>Community</b></p>
           <a href="">Twitter</a><br>
           <a href="">Facebook</a><br>
-          <%= link_to 'Contact Us', page_path('contact') %>
+          <a href="/contact">Contact Us</a>
         </div>
         <div class="col-md-5">
           <p><b>Join Our Newsletter!</b></p>

@@ -5,11 +5,11 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='//fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ "/css/application.css" | prepend: site.baseurl }}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#sidenav" data-offset="20">
@@ -27,7 +27,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img alt="Draft pennant logo blue" class="logo" src="/img/draft-pennant-logo-blue.png"> SAFER
+        <img alt="Draft pennant logo blue" class="logo" src="{{ site.baseurl }}/img/draft-pennant-logo-blue.png"> SAFER
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -64,21 +64,21 @@
       <div class="row">
         <div class="col-md-3">
           <p><b>School Sexual Assault</b></p>
-          <a href="/basics">The Basics</a><br>
-          <a href="/policy">Policy</a><br>
-          <a href="/activism">Activism</a>
+          <a href="{{ site.baseurl }}/basics">The Basics</a><br>
+          <a href="{{ site.baseurl }}/policy">Policy</a><br>
+          <a href="{{ site.baseurl }}/activism">Activism</a>
         </div>
         <div class="col-md-2">
           <p><b>About Us</b></p>
-          <a href="/about">About</a><br>
-          <a href="/press">Press</a><br>
-          <a href="/terms">Terms</a>
+          <a href="{{ site.baseurl }}/about">About</a><br>
+          <a href="{{ site.baseurl }}/press">Press</a><br>
+          <a href="{{ site.baseurl }}/terms">Terms</a>
         </div>
         <div class="col-md-2">
           <p><b>Community</b></p>
-          <a href="">Twitter</a><br>
-          <a href="">Facebook</a><br>
-          <a href="/contact">Contact Us</a>
+          <a href="{{ site.baseurl }}">Twitter</a><br>
+          <a href="{{ site.baseurl }}">Facebook</a><br>
+          <a href="{{ site.baseurl }}/contact">Contact Us</a>
         </div>
         <div class="col-md-5">
           <p><b>Join Our Newsletter!</b></p>

@@ -47,4 +47,4 @@ Policy represents a powerful tool for social change, but it also has its drawbac
 
 # Current school policies
 
-Current school policies (link to CAP report, maybe a paragraph about how the project is on hiatus)
+Current school policies (more content needed here)

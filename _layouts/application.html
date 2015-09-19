@@ -32,13 +32,25 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        {% for site_page in site.pages %}
-          {% if site_page.title %}
-            <li{% if page.url == site_page.url %} class="active"{% endif %}>
-              <a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li{% if page.url == '/basics/' %} class="active"{% endif %}>
+          <a href="/basics/">The Basics</a>
+        </li>
+
+        <li{% if page.url == '/policy/' %} class="active"{% endif %}>
+          <a href="/policy/">Policy</a>
+        </li>
+
+        <li{% if page.url == '/activism/' %} class="active"{% endif %}>
+          <a href="/activism/">Activism</a>
+        </li>
+
+        <li{% if page.url == '/press/' %} class="active"{% endif %}>
+          <a href="/press/">Press</a>
+        </li>
+
+        <li{% if page.url == '/about/' %} class="active"{% endif %}>
+          <a href="/about/">About</a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>

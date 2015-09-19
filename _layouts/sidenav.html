@@ -14,10 +14,12 @@ layout: application
 
 <div class="container">
   <div class="row">
-    <nav class="col-xs-3" id="sidenav">
-      <ul class="nav nav-stacked" data-spy="affix" data-offset-top="211" data-offset-bottom="291">
-      </ul>
-    </nav>
+    <div class="col-xs-3" id="sidenav">
+      <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="211" data-offset-bottom="291">
+        <ul class="nav bs-sidenav">
+        </ul>
+      </div>
+    </div>
 
     <div class="col-xs-9 main-content">
       {{ content }}
@@ -32,7 +34,7 @@ layout: application
       title: "",
       skipTopList: true,
       listType: 'ul',
-      listClass: 'nav nav-stacked',
+      listClass: 'nav',
       noBackToTopLinks: true,
       minimumHeaders: 2,
       showSpeed: 0,

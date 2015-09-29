@@ -34,6 +34,7 @@
 <script src="<?=$view->getThemePath()?>/js/toc.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+    // Initialize our table of contents.
     $('#sidenav ul').toc({
       headersScope: '.main-content',
       title: "",
@@ -44,6 +45,9 @@
       minimumHeaders: 2,
       showSpeed: 0,
     });
+
+    // Setup any popovers that may exist on the page.
+    $('[data-toggle="popover"]').popover({"trigger": "hover", "placement": "right"});
   });
 </script>
 

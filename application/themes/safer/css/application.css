@@ -142,3 +142,17 @@ footer hr {
       #sidenav .bs-sidebar.affix-bottom,
       #sidenav .bs-sidebar.affix {
         width: 263px; } }
+
+.table.teach-in thead {
+  text-align: center;
+  color: #56A7E9;
+  font-weight: 200;
+  font-size: 18px;
+}
+.table.teach-in .blue {
+  color: #56A7E9;
+}
+.table.teach-in .large {
+  font-size: 18px;
+  font-weight: 200;
+}

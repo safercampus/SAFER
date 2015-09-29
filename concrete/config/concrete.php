@@ -423,14 +423,14 @@ return array(
          *
          * @var bool concrete.external.news_overlay
          */
-        'news_overlay'            => true,
+        'news_overlay'            => false,
 
         /**
          * Enable concrete5 news within your site
          *
          * @var bool concrete.external.news
          */
-        'news'                    => true,
+        'news'                    => false,
     ),
 
     /**

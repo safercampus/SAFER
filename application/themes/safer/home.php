@@ -7,15 +7,11 @@
             $a->display($c);
         ?>
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-12">
             <?php
                 $a = new Area('Homepage Header Blurb');
                 $a->display($c);
             ?>
-          </div>
-          <div class="col-md-3">
-            <br>
-            <p><a class="btn btn-primary btn-lg" role="button" href="teach_in">Request a teach-in</a></p>
           </div>
         </div>
       </div>
@@ -27,7 +23,7 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4 main-sections">
-          <h2>The Basics</h2>
+          <img class="page-logo" alt="The Basics" src="<?=$view->getThemePath()?>/img/The Basics icon.png">
           <?php
               $a = new Area('Homepage The Basics Blurb');
               $a->display($c);
@@ -36,7 +32,7 @@
           <p><a class="btn btn-primary" href="basics" role="button">Learn more</a></p>
         </div>
         <div class="col-md-4 main-sections">
-          <h2>Policy</h2>
+          <img class="page-logo" alt="Policy" src="<?=$view->getThemePath()?>/img/Policy icon.png">
           <?php
               $a = new Area('Homepage Policy Blurb');
               $a->display($c);
@@ -45,7 +41,7 @@
           <p><a class="btn btn-primary" href="policy" role="button">Learn more</a></p>
        </div>
         <div class="col-md-4 main-sections">
-          <h2>Activism</h2>
+          <img class="page-logo" alt="Activism" src="<?=$view->getThemePath()?>/img/Activism icon.png">
           <?php
               $a = new Area('Homepage Activism Blurb');
               $a->display($c);

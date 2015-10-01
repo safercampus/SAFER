@@ -15,8 +15,8 @@
             </div>
             <div class="col-md-2">
               <p><b>Community</b></p>
-              <a href="">Twitter</a><br>
-              <a href="">Facebook</a><br>
+              <a href="https://twitter.com/safercampus">Twitter</a><br>
+              <a href="https://www.facebook.com/safercampus">Facebook</a><br>
               <a href="/contact">Contact Us</a>
             </div>
             <div class="col-md-5">

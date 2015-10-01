@@ -23,7 +23,7 @@
 
     var section_number = 1;
     var headers = $(settings.headersScope).find(settings.headers).filter(function() {
-      this.id = section_number++;
+      this.id = "section-" + section_number++;
       return true;
     }), output = $(this);
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {

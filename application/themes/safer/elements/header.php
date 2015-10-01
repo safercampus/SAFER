@@ -47,7 +47,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img alt="SAFER logo" class="logo" src="<?=$view->getThemePath()?>/img/logo.png">
+            <img alt="SAFER logo" class="logo" src="<?=$view->getThemePath()?>/img/SAFER bullhorn logo.png">
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">

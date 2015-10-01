@@ -45,6 +45,13 @@ footer hr {
   font-size: 46px;
   margin-bottom: 16px; }
 
+.jumbo-image {
+  background: url("/application/themes/safer/img/jumbotron.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
 .main-sections {
   text-align: center;
   margin-top: 60px;

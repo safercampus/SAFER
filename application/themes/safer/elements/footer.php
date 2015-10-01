@@ -12,7 +12,6 @@
               <p><b>About Us</b></p>
               <a href="/about">About</a><br>
               <a href="/press">Press</a><br>
-              <a href="/terms">Terms</a>
             </div>
             <div class="col-md-2">
               <p><b>Community</b></p>

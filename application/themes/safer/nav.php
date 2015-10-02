@@ -46,6 +46,14 @@
       showSpeed: 0,
     });
 
+    // Init sidebar max height and update it on page resize.
+    // This allows LARGE side navs to be scrollable.
+    var sidebar = $("#sidenav .bs-sidebar");
+    sidebar.css("max-height", $(window).height());
+    $(window).resize(function() {
+        sidebar.css("max-height", $(window).height());
+    });
+
     // Setup any popovers that may exist on the page.
     $('[data-toggle="popover"]').popover({"trigger": "hover", "placement": "right"});
   });

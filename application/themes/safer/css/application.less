@@ -86,10 +86,15 @@ h1, h2, h3 {
 
 /* Content */
 .header-section {
-  height: 160px;
   padding-top: 30px;
-  padding-bottom: 30px;
   border-bottom: 1px solid #eee;
+  @media screen and (min-width: @medium-screen) {
+    // Fix height of header section when sidenav is moveable
+    & {
+      height: 160px;
+      padding-bottom: 30px;
+    }
+  }
 }
 
 .main-content {

@@ -28,6 +28,7 @@ h1, h2, h3 {
 .page-logo {
   max-height: 100px;
   margin-bottom: 15px;
+  margin-top: -15px;
 }
 
 .navbar-nav > li > a.btn {
@@ -62,7 +63,7 @@ footer hr {
 .main-sections {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px; }
+  margin-bottom: 45px; }
 
 /* Content */
 .header-section {

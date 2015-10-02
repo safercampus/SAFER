@@ -61,8 +61,8 @@
     var firstname = form.find("input[name='firstname']").val();
     var lastname = form.find("input[name='lastname']").val();
     var email = form.find("input[name='email']").val();
-    var emailGroup = $("form").find(".form-group").first();
-    var nameGroup = $("form").find(".form-group").last();
+    var emailGroup = form.find(".form-group").first();
+    var nameGroup = form.find(".form-group").last();
 
     var ret = true;
     if (firstname == "" || lastname == "") {

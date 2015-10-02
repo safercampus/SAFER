@@ -3,52 +3,53 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-              <p><b>School Sexual Assault</b></p>
+              <div class="heading">School Sexual Assault</div>
               <a href="/basics">The Basics</a><br>
               <a href="/policy">Policy</a><br>
               <a href="/activism">Activism</a>
             </div>
             <div class="col-md-2">
-              <p><b>About Us</b></p>
+              <div class="heading">About Us</div>
               <a href="/about">About</a><br>
               <a href="/press">Press</a><br>
             </div>
             <div class="col-md-2">
-              <p><b>Community</b></p>
+              <div class="heading">Community</div>
               <a href="https://twitter.com/safercampus">Twitter</a><br>
               <a href="https://www.facebook.com/safercampus">Facebook</a><br>
               <a href="/contact">Contact Us</a>
             </div>
             <div class="col-md-5">
-              <p><b>Join Our Newsletter!</b></p>
+              <div class="heading">Join Our Newsletter!</div>
               <form class="form-horizontal" role="form" action="http://www.trailblz.info/SAFER/signup_post.aspx" method="get" name="newsLetterForm" onsubmit="return validateform()">
                 <input type="hidden" name="rd" value="http://safercampus.org">
                 <div class="form-group">
-                  <div class="col-sm-12">
+                  <div class="col-md-12">
                     <input type="email" name="email" class="form-control" id="" placeholder="Email">
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-sm-4">
+                  <div class="col-md-4">
                     <input name="firstname" type="text" class="form-control" id="" placeholder="First Name">
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4">
                     <input name="lastname" type="text" class="form-control" id="" placeholder="Last Name">
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-md-2">
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                   </div>
                 </div>
               </div>
             </div>
             <hr>
-            <p class="small">&copy; 2015 Students Active For Ending Rape. All Rights Reserved.</p>
+            <div class="small">&copy; 2015 SAFER Campus. All Rights Reserved.</div>
           </div>
         </footer>
       </div>
   </div>
   <? Loader::element('footer_required'); // concrete5 setup  ?>
 </body>
+
 <script type="text/javascript">
   // http://stackoverflow.com/a/2855946
   function isValidEmailAddress(emailAddress) {

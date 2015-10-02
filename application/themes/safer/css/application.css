@@ -17,6 +17,7 @@ h1, h2, h3 {
   color: #56A7E9;
   padding: 0px;
   margin-top: -5px;
+  margin-left: 15px;
 }
 
 .logo {
@@ -39,11 +40,30 @@ h1, h2, h3 {
 
 footer {
   background-color: #eee;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 footer hr {
+  margin-top: 0px;
   border-color: grey; }
+
+footer .heading {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer .form-group {
+  margin-bottom: 0px;
+}
+
+footer .row > div {
+  margin-bottom: 20px;
+}
+
+footer form button {
+  margin-top: 5px;
+}
+
 
 /* Homepage */
 .jumbotron {
@@ -95,10 +115,31 @@ footer hr {
 /* @media */
 @media screen and (min-width: 992px) {
   .bs-sidebar.affix {
-    top: 10px; } }
+    top: 10px;
+  }
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  footer .heading {
+    margin-bottom: 10px;
+  }
+  footer .form-group {
+    margin-bottom: 15px;
+  }
+
+  footer form button {
+    margin-top: 0px;
+  }
+}
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding: 60px 0; } }
+    padding: 60px 0;
+  }
+  .navbar-brand {
+    margin-left: 0px;
+  }
+}
 #sidenav {
   /* First level of nav */
   /* All levels of nav */

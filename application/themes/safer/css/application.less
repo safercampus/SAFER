@@ -1,57 +1,39 @@
 /* ==========================================================================
 Author's custom styles
 ========================================================================== */
+@import "variables";
+@import "navbar_toggle";
+@import "footer";
+@import "sidenav";
+
 body {
-  padding-top: 0px; }
+  padding-top: 0px;
+}
 
 h1, h2, h3 {
-  font-family: 'Pompiere', cursive; }
+  font-family: 'Pompiere', cursive;
+}
 
 /* Header and footer */
 .navbar {
-  margin-bottom: 0px; }
-  .navbar .navbar-right li {
-    margin-left: 15px; }
+  margin-bottom: 0px;
+  .navbar-right li {
+    margin-left: 15px;
+  }
+}
 
 .navbar-default .navbar-brand {
   color: #56A7E9;
   padding: 0px;
   margin-top: -5px;
   margin-left: 15px;
-}
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
+  @media screen and (min-width: @small-screen) {
+    & {
+      margin-left: 0px;
+    }
+  }
 }
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
-}
-
 
 .logo {
   display: inline-block !important;
@@ -71,40 +53,23 @@ h1, h2, h3 {
   padding-top: 8px;
   padding-bottom: 8px; }
 
-footer {
-  background-color: #eee;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-footer hr {
-  margin-top: 0px;
-  border-color: grey; }
-
-footer .heading {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-footer .form-group {
-  margin-bottom: 0px;
-}
-
-footer .row > div {
-  margin-bottom: 20px;
-}
-
-footer form button {
-  margin-top: 5px;
-}
 
 
 /* Homepage */
 .jumbotron {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
 
-.jumbotron h1, .jumbotron .h1 {
-  font-size: 46px;
-  margin-bottom: 16px; }
+  h1 {
+    font-size: 46px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: @small-screen) {
+    & {
+      padding: 60px 0;
+    }
+  }
+}
 
 .jumbo-image {
   background: url("/application/themes/safer/img/jumbotron.jpg") no-repeat center center;
@@ -116,139 +81,55 @@ footer form button {
 .main-sections {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+}
 
 /* Content */
 .header-section {
   height: 160px;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+}
 
 .main-content {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
 
-.main-content.full {
-  margin-top: 30px;
+  &.full {
+    margin-top: 30px;
+  }
+
+  h1, h2 {
+    padding-top: 25px;
+
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }
 
-.next-section {
-  margin-top: 30px; }
-
-.main-content h1, .main-content h2 {
-  padding-top: 25px; }
-.main-content h1:first-child,
-.main-content h2:first-child {
-  padding-top: 0px; }
-.main-content h1 {
-  font-size: 30px; }
-.main-content h2 {
-  font-size: 24px; }
-
-/* @media */
-@media screen and (min-width: 992px) {
-  .bs-sidebar.affix {
-    top: 10px;
-  }
-  footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  footer .heading {
-    margin-bottom: 10px;
-  }
-  footer .form-group {
-    margin-bottom: 15px;
+.table.teach-in {
+  thead {
+    text-align: center;
+    color: #56A7E9;
+    font-weight: 200;
+    font-size: 18px;
   }
 
-  footer form button {
-    margin-top: 0px;
+  .blue {
+    color: #56A7E9;
   }
-}
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding: 60px 0;
-  }
-  .navbar-brand {
-    margin-left: 0px;
-  }
-}
-#sidenav {
-  /* First level of nav */
-  /* All levels of nav */
-  /* Nav: second level (shown on .active) */
-  /* Show and affix the side nav when space allows it */ }
-  #sidenav .bs-sidebar.affix {
-    position: static; }
-  #sidenav .bs-sidenav {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 0 1px 0 #fff;
-    background-color: #f7f5fa;
-    border-radius: 5px; }
-  #sidenav .bs-sidebar .nav > li > a {
-    display: block;
-    color: #716b7a;
-    padding: 5px 20px; }
-  #sidenav .bs-sidebar .nav > li > a:hover,
-  #sidenav .bs-sidebar .nav > li > a:focus {
-    text-decoration: none;
-    background-color: #e5e3e9;
-    border-right: 1px solid #dbd8e0; }
-  #sidenav .bs-sidebar .nav > .active > a,
-  #sidenav .bs-sidebar .nav > .active:hover > a,
-  #sidenav .bs-sidebar .nav > .active:focus > a {
-    font-weight: bold;
-    color: #563d7c;
-    background-color: transparent;
-    border-right: 1px solid #563d7c; }
-  #sidenav .bs-sidebar .nav .nav {
-    display: none;
-    /* Hide by default, but at >768px, show it */
-    margin-bottom: 8px; }
-  #sidenav .bs-sidebar .nav .nav > li > a {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 30px;
-    font-size: 90%; }
-  @media (min-width: 992px) {
-    #sidenav {
-      /* Widen the fixed sidebar */ }
-      #sidenav .bs-sidebar .nav > .active > ul {
-        display: block; }
-      #sidenav .bs-sidebar.affix,
-      #sidenav .bs-sidebar.affix-bottom {
-        width: 213px; }
-      #sidenav .bs-sidebar.affix {
-        position: fixed;
-        /* Undo the static from mobile first approach */
-        top: 20px; }
-      #sidenav .bs-sidebar.affix-bottom {
-        position: absolute;
-        /* Undo the static from mobile first approach */ }
-      #sidenav .bs-sidebar.affix-bottom .bs-sidenav,
-      #sidenav .bs-sidebar.affix .bs-sidenav {
-        margin-top: 0;
-        margin-bottom: 0; } }
-  @media (min-width: 1200px) {
-    #sidenav {
-      /* Widen the fixed sidebar again */ }
-      #sidenav .bs-sidebar.affix-bottom,
-      #sidenav .bs-sidebar.affix {
-        width: 263px; } }
 
-.table.teach-in thead {
-  text-align: center;
-  color: #56A7E9;
-  font-weight: 200;
-  font-size: 18px;
-}
-.table.teach-in .blue {
-  color: #56A7E9;
-}
-.table.teach-in .large {
+  .large {
   font-size: 18px;
   font-weight: 200;
+  }
 }

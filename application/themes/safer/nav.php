@@ -15,14 +15,14 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-3" id="sidenav">
+    <div class="col-md-3" id="sidenav">
       <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="211" data-offset-bottom="291">
         <ul class="nav bs-sidenav">
         </ul>
       </div>
     </div>
 
-    <div class="col-xs-9 main-content">
+    <div class="col-md-9 main-content">
       <?php
           $a = new Area('Content section');
           $a->display($c);

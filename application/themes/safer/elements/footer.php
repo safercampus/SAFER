@@ -22,7 +22,7 @@
             <div class="col-md-5">
               <div class="heading">Join Our Newsletter!</div>
               <form class="form-horizontal" role="form" action="http://www.trailblz.info/SAFER/signup_post.aspx" method="get" name="newsLetterForm" onsubmit="return validateform()">
-                <input type="hidden" name="rd" value="http://safercampus.org">
+                <input type="hidden" name="rd" value="http://safercampus.org/newsletter-thank-you">
                 <div class="form-group">
                   <div class="col-md-12">
                     <input type="email" name="email" class="form-control" id="" placeholder="Email">

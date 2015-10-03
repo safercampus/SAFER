@@ -96,6 +96,21 @@ h1, h2, h3 {
       bottom: -40px;
     }
   }
+
+  @media (max-width: @small-screen) {
+    & {
+      margin-bottom: 20px;
+
+      .main-sections {
+        display: block;
+        margin-bottom: 40px;
+
+        .button-container {
+          position: static;
+        }
+      }
+    }
+  }
 }
 
 /* Content */

@@ -157,3 +157,30 @@ h1, h2, h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.information-resource-panel {
+  margin-left: 30px;
+  margin-bottom: 5px;
+
+  .panel-heading {
+    &:hover {
+      .title {
+        text-decoration: underline;
+      }
+    }
+    i.glyphicon {
+      float: right;
+    }
+    .glyphicon-chevron-up {
+      display: none;
+    }
+    &.collapsed {
+      .glyphicon-chevron-down {
+        display: none;
+      }
+      .glyphicon-chevron-up {
+        display: block;
+      }
+    }
+  }
+}

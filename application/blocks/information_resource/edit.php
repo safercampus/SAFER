@@ -1,0 +1,28 @@
+<?php defined('C5_EXECUTE') or die("Access Denied.");
+?>
+
+<style type="text/css" media="screen">
+	.ccm-block-field-group h2 { margin-bottom: 5px; }
+	.ccm-block-field-group td { vertical-align: middle; }
+</style>
+
+<div class="ccm-block-field-group">
+	<h2>Resource Link</h2>
+	<table border="0" cellspacing="3" cellpadding="0" style="width: 95%;">
+		<tr>
+			<td align="right" nowrap="nowrap"><label for="field_1_link_url">Link to URL:</label>&nbsp;</td>
+			<td align="left" style="width: 100%;"><?php echo $form->text('field_1_link_url', $field_1_link_url, array('style' => 'width: 100%;')); ?></td>
+		</tr>
+		<tr>
+			<td align="right" nowrap="nowrap"><label for="field_1_link_text">Link Text:</label>&nbsp;</td>
+			<td align="left" style="width: 100%;"><?php echo $form->text('field_1_link_text', $field_1_link_text, array('style' => 'width: 100%;')); ?></td>
+		</tr>
+	</table>
+</div>
+
+<div class="ccm-block-field-group">
+	<h2>Resource Blurb</h2>
+	<textarea id="field_2_textarea_text" name="field_2_textarea_text" rows="5" style="width: 95%;"><?php echo $field_2_textarea_text; ?></textarea>
+</div>
+
+

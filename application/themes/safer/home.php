@@ -32,10 +32,7 @@
           ?>
           <div class="button-container">
             <a class="btn btn-primary" href="/basics" role="button">
-              <?php
-                  $a = new Area('Homepage Basics Button');
-                  $a->display($c);
-              ?>
+              Learn More
             </a>
           </div>
         </div>
@@ -49,10 +46,7 @@
           ?>
           <div class="button-container">
             <a class="btn btn-primary" href="/policy" role="button">
-              <?php
-                  $a = new Area('Homepage Policy Button');
-                  $a->display($c);
-              ?>
+              Learn More
             </a>
           </div>
        </div>
@@ -67,10 +61,7 @@
           ?>
           <div class="button-container">
             <a class="btn btn-primary" href="/activism" role="button">
-              <?php
-                  $a = new Area('Homepage Activism Button');
-                  $a->display($c);
-              ?>
+              Learn More
             </a>
           </div>
         </div>

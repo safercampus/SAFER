@@ -2,6 +2,7 @@
 Author's custom styles
 ========================================================================== */
 @import "prefixer";
+@import "buttons";
 @import "variables";
 
 @import "navbar_toggle";
@@ -14,6 +15,11 @@ body {
 
 h1, h2, h3 {
   font-family: 'Pompiere', cursive;
+}
+
+// Customize bootstrap primary button to be that of our brand color.
+.btn-primary {
+  .button-variant(#fff; @brand-primary; darken(@brand-primary, 5%));
 }
 
 /* Header and footer */
@@ -230,5 +236,4 @@ h1, h2, h3 {
       }
     }
   }
-
 }

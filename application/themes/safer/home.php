@@ -21,7 +21,7 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row main-blurbs-container">
         <div class="col-md-4 main-sections">
           <a href="/basics">
             <img class="page-logo" alt="The Basics" src="<?=$view->getThemePath()?>/img/The Basics icon.png">
@@ -38,8 +38,9 @@
         </div>
 
         <div class="col-md-4 main-sections">
-              <a href="/policy">Policy
-          <img class="page-logo" alt="Policy" src="<?=$view->getThemePath()?>/img/Policy icon.png">
+          <a href="/policy">
+            <img class="page-logo" alt="Policy" src="<?=$view->getThemePath()?>/img/Policy icon.png">
+          </a>
           <?php
               $a = new Area('Homepage Policy Blurb');
               $a->display($c);

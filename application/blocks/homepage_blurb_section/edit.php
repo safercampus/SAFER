@@ -18,7 +18,7 @@
 
 <div class="ccm-block-field-group">
 	<h2>Blurb Content</h2>
-	<?php print Core::make('editor')->outputStandardEditor('field_3_wysiwyg_content'); ?>
+	<?php print Core::make('editor')->outputStandardEditor('field_3_wysiwyg_content', $field_3_wysiwyg_content); ?>
 </div>
 
 <div class="ccm-block-field-group">

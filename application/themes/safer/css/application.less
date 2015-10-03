@@ -46,7 +46,6 @@ h1, h2, h3 {
 .page-logo {
   max-height: 100px;
   margin-bottom: 15px;
-  margin-top: -15px;
 }
 
 .navbar-nav > li > a.btn {
@@ -80,10 +79,22 @@ h1, h2, h3 {
   width: 100%;
 }
 
-.main-sections {
-  text-align: center;
+.main-blurbs-container {
+  display: table;
   margin-top: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
+
+  .main-sections {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+
+    .button-container {
+      width: 100%;
+      position: absolute;
+      bottom: 20px;
+    }
+  }
 }
 
 /* Content */

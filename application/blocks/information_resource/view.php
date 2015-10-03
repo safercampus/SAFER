@@ -5,7 +5,7 @@
   $id = strtolower(str_replace(" ", "_", $field_1_link_text));
  ?>
 
-<div class="panel panel-default information-resource-panel">
+<div class="panel panel-default">
   <div class="panel-heading collapsed" role="button" data-toggle="collapse" data-target="#<?php echo $id; ?>" aria-expanded="false" aria-controls="<?php echo $id; ?>">
     <div class="panel-title">
         <span class="title"><?php echo $link_text; ?></span>

@@ -3,6 +3,14 @@
     position: static;
   }
 
+  // Disable the max-height coming from javascript when we collapse
+  // the sidenav to the top of the page.
+  @media (max-width: @small-screen) {
+    .bs-sidebar {
+      max-height: none!important;
+    }
+  }
+
   /* First level of nav */
   .bs-sidenav {
     margin-top: 20px;

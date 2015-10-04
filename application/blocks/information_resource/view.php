@@ -2,7 +2,9 @@
   defined('C5_EXECUTE') or die("Access Denied.");
   $link_url = $this->controller->valid_url($field_1_link_url);
   $link_text = empty($field_1_link_text) ? $field_1_link_url : htmlentities($field_1_link_text, ENT_QUOTES, APP_CHARSET);
-  $id = strtolower(str_replace(" ", "_", $field_1_link_text));
+  // Replace every non alphanumeric character with an underscore and lower case it.
+  $id = strtolower(preg_replace("/[^A-Za-z0-9]/", '_', $field_1_link_text));
+
  ?>
 
 <div class="panel panel-default">

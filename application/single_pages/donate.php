@@ -50,5 +50,12 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  // Default expand the donation form for large screens.
+  if ($(window).width() >= 992) {
+    $('#donationForm').addClass('in');
+    $('#donationForm').collapse('show');
+  }
+</script>
 
 <?= $view->inc('elements/footer.php'); ?>

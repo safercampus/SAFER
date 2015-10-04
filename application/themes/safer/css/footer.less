@@ -1,7 +1,30 @@
+@footer-height-small-screen: 559px;
+@footer-height: 267px;
+@media (min-width: @small-screen) {
+  body {
+    padding-bottom: @footer-height !important;
+  }
+  footer {
+    height: @footer-height !important;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-bottom: @footer-height-small-screen;
+}
+
 footer {
   background-color: #eee;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: @footer-height-small-screen;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
 
   hr {
     margin-top: 0px;

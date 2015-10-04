@@ -2,24 +2,31 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
-            <div class="heading">School Sexual Assault</div>
-            <a href="/basics">The Basics</a><br>
-            <a href="/policy">Policy</a><br>
-            <a href="/activism">Activism</a>
+            <?php
+              $a = new GlobalArea('Footer First Column');
+              $a->display($c);
+            ?>
           </div>
+
           <div class="col-sm-2">
-            <div class="heading">About Us</div>
-            <a href="/about">About</a><br>
-            <a href="/press">Press</a><br>
+            <?php
+              $a = new GlobalArea('Footer Second Column');
+              $a->display($c);
+            ?>
           </div>
+
           <div class="col-sm-2">
-            <div class="heading">Community</div>
-            <a href="https://twitter.com/safercampus">Twitter</a><br>
-            <a href="https://www.facebook.com/safercampus">Facebook</a><br>
-            <a href="/contact">Contact Us</a>
+            <?php
+              $a = new GlobalArea('Footer Third Column');
+              $a->display($c);
+            ?>
           </div>
           <div class="col-sm-5">
-            <div class="heading">Join Our Newsletter!</div>
+            <?php
+              $a = new GlobalArea('Footer Fourth Column');
+              $a->display($c);
+            ?>
+
             <form class="form-horizontal" role="form" action="http://www.trailblz.info/SAFER/signup_post.aspx" method="get" name="newsLetterForm" onsubmit="return validateform()">
               <input type="hidden" name="rd" value="http://safercampus.org/newsletter-thank-you">
               <div class="form-group">
@@ -41,7 +48,11 @@
             </div>
           </div>
           <hr>
-          <div class="small">&copy; 2015 SAFER Campus. All Rights Reserved.</div>
+          <div class="small">
+            <?php
+              $a = new GlobalArea('Footer Copyright');
+              $a->display($c);
+            ?>
         </div>
       </div>
     </footer>

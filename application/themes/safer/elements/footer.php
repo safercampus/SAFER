@@ -1,4 +1,4 @@
-    <footer>
+    <footer id="safer">
       <div class="container">
         <div class="row">
           <div class="col-sm-3">

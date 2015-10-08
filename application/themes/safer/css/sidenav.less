@@ -72,7 +72,7 @@
     }
     .bs-sidebar.affix {
       position: fixed; /* Undo the static from mobile first approach */
-      top: 20px;
+      top: 70px;
       padding-bottom: 40px;
     }
     .bs-sidebar.affix-bottom {
@@ -90,6 +90,14 @@
     .bs-sidebar.affix-bottom,
     .bs-sidebar.affix {
       width: 263px;
+    }
+  }
+}
+
+@media (min-width: @medium-screen) {
+  html.ccm-toolbar-visible {
+    .bs-sidebar.affix {
+      top: 118px !important;
     }
   }
 }

@@ -68,12 +68,11 @@
     .bs-sidebar.affix,
     .bs-sidebar.affix-bottom {
       width: 213px;
-      overflow: scroll; // max-height is set by javascript.
+      overflow-y: auto; // max-height is set by javascript.
     }
     .bs-sidebar.affix {
       position: fixed; /* Undo the static from mobile first approach */
       top: 70px;
-      padding-bottom: 40px;
     }
     .bs-sidebar.affix-bottom {
       position: absolute; /* Undo the static from mobile first approach */

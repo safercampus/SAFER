@@ -49,9 +49,9 @@
     // Init sidebar max height and update it on page resize.
     // This allows LARGE side navs to be scrollable.
     var sidebar = $("#sidenav .bs-sidebar");
-    sidebar.css("max-height", $(window).height());
+    sidebar.css("max-height", $(window).height() - 69);
     $(window).resize(function() {
-        sidebar.css("max-height", $(window).height());
+      sidebar.css("max-height", $(window).height() - 69); // nav height (50) + ~20px padding
     });
 
     // Setup any popovers that may exist on the page.

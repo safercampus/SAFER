@@ -27,7 +27,13 @@
               $a->display($c);
             ?>
 
-            <form class="form-horizontal" role="form" action="http://www.trailblz.info/SAFER/signup_post.aspx" method="get" name="newsLetterForm" onsubmit="return validateform()">
+            <form autocomplete="off"
+                class="form-horizontal"
+                role="form"
+                action="http://www.trailblz.info/SAFER/signup_post.aspx"
+                method="get"
+                name="newsLetterForm"
+                onsubmit="return validateform()">
               <input type="hidden" name="rd" value="http://safercampus.org/newsletter-thank-you">
               <div class="form-group">
                 <div class="col-md-12">

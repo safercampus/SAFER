@@ -54,6 +54,14 @@
           <a class="navbar-brand" href="/">
             <img alt="SAFER logo" class="logo" src="<?=$view->getThemePath()?>/img/SAFER bullhorn logo.png">
           </a>
+          <div class="pull-right visible-xs">
+            <p class="navbar-btn">
+              <a class="btn btn-primary" href="/teach-in">Request a teach-in</a>
+            </p>
+            <p class="navbar-btn">
+              <a class="btn btn-primary" href="/donate">Donate</a>
+            </p>
+          </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <?php
@@ -62,7 +70,7 @@
             $bt->controller->displayPages = 'top';
             $bt->render('templates/topnav');
           ?>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right hidden-xs">
             <li>
               <p class="navbar-btn">
                 <a class="btn btn-primary" href="/teach-in">Request a teach-in</a>

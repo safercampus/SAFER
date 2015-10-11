@@ -2,11 +2,15 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1 class="big-safer">safer</h1>
-        <?php
-            $a = new Area('Homepage Header');
-            $a->display($c);
-        ?>
+        <div class="row">
+          <div class="col-md-12">
+            <span class="big-safer">safer</span>
+            <?php
+                $a = new Area('Homepage Header');
+                $a->display($c);
+            ?>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <?php

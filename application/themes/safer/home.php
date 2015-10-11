@@ -2,6 +2,7 @@
 
     <div class="jumbotron">
       <div class="container">
+        <h1 class="big-safer">safer</h1>
         <?php
             $a = new Area('Homepage Header');
             $a->display($c);

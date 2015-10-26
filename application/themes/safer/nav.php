@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-3" id="sidenav">
       <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="161" data-offset-bottom="291">

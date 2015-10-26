@@ -10,19 +10,22 @@ Author's custom styles
 @medium-screen: 992px;
 @large-screen: 1200px;
 
+@ccm-nav-height: 48px;
+@top-nav-height: 50px;
+
 @import "navbar_toggle";
 @import "footer";
 @import "sidenav";
 
 html.ccm-toolbar-visible {
   .navbar-fixed-top {
-    top: 48px;
+    top: @ccm-nav-height;
   }
 
 }
 
 body {
-  padding-top: 50px;
+  padding-top: @top-nav-height;
 }
 
 h1, h2, h3 {
@@ -176,6 +179,19 @@ h1, h2, h3 {
   }
 }
 
+html.ccm-toolbar-visible {
+  .main-content {
+    h1, h2 {
+      padding-top: @top-nav-height + @ccm-nav-height + 45px;
+      margin-top: -(@top-nav-height + @ccm-nav-height);
+
+      &:first-child {
+        padding-top: @top-nav-height + @ccm-nav-height + 20px;
+      }
+    }
+  }
+}
+
 .main-content {
   margin-bottom: 30px;
 
@@ -184,10 +200,11 @@ h1, h2, h3 {
   }
 
   h1, h2 {
-    padding-top: 25px;
+    padding-top: @top-nav-height + 45px;
+    margin-top: -@top-nav-height;
 
     &:first-child {
-      padding-top: 0px;
+      padding-top: @top-nav-height + 20px;
     }
   }
 

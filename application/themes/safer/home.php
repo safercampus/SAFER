@@ -27,27 +27,48 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row main-blurbs-container">
-        <div class="col-md-4 main-sections">
+        <div class="col-md-3 main-sections">
           <?php
               $a = new Area('Homepage The Basics Blurb');
               $a->display($c);
           ?>
         </div>
 
-        <div class="col-md-4 main-sections">
+        <div class="col-md-3 main-sections">
           <?php
               $a = new Area('Homepage Policy Blurb');
               $a->display($c);
           ?>
        </div>
 
-        <div class="col-md-4 main-sections">
+        <div class="col-md-3 main-sections">
           <?php
               $a = new Area('Homepage Activism Blurb');
+              $a->display($c);
+          ?>
+        </div>
+
+        <div class="col-md-3 main-sections">
+          <?php
+              $a = new Area('Homepage Teach-In Blurb');
               $a->display($c);
           ?>
         </div>
       </div>
     </div>
 
+<script type="text/javascript">
+  // Adds rollover effect to homepage blurb images.
+  $(document).ready(function () {
+    $(".main-blurbs-container img.page-logo").hover(
+      function() {
+        var src = $(this).attr('src');
+        $(this).attr('src', src.replace(".png", "-rollover.png"));
+      }, function() {
+        var src = $(this).attr('src');
+        $(this).attr('src', src.replace("-rollover.png", ".png"));
+      }
+    );
+  });
+</script>
 <?= $view->inc('elements/footer.php'); ?>

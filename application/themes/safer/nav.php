@@ -16,7 +16,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3" id="sidenav">
-      <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="161" data-offset-bottom="291">
+      <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="176" data-offset-bottom="291">
         <ul class="nav bs-sidenav">
         </ul>
       </div>

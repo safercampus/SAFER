@@ -3,7 +3,12 @@ Author's custom styles
 ========================================================================== */
 @import "prefixer";
 @import "buttons";
-@import "variables";
+@import "presets/defaults";
+
+// Non CMS configurable variables.
+@small-screen: 768px;
+@medium-screen: 992px;
+@large-screen: 1200px;
 
 @import "navbar_toggle";
 @import "footer";
@@ -26,7 +31,7 @@ h1, h2, h3 {
 
 // Customize bootstrap primary button to be that of our brand color.
 .btn-primary {
-  .button-variant(#fff; @brand-primary; darken(@brand-primary, 5%));
+  .button-variant(@button-font-color; @button-color; darken(@button-color, 5%));
 }
 
 /* Header and footer */
@@ -83,6 +88,7 @@ h1, h2, h3 {
 /* Homepage */
 .jumbotron {
   margin-bottom: 0px;
+  color: @jumbotron-color;
 
   .big-safer {
     font-size: 100px;

@@ -19,9 +19,6 @@ html {
 body {
   padding-bottom: @footer-height-small-screen;
 }
-footer#safer {
-  height: @footer-height-small-screen;
-}
 
 footer#safer {
   background-color: #eee;
@@ -30,6 +27,20 @@ footer#safer {
   width: 100%;
   bottom: 0px;
   position: absolute;
+  height: @footer-height-small-screen;
+
+  strong {
+    color: @footer-heading-color;
+  }
+
+  a {
+    color: @footer-link-color;
+
+    &:hover {
+      text-decoration: none;
+      color: darken(@footer-link-color, 15%)
+    }
+  }
 
   hr {
     margin-top: 0px;

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Site Styles">
+        <style name="Button Color" variable="button" type="color" />
+        <style name="Button Font Color" variable="button-font" type="color" />
+        <style name="Footer Heading Color" variable="footer-heading" type="color" />
+        <style name="Footer Link Color" variable="footer-link" type="color" />
+        <style name="Jumbotron (Top of Homepage) Color" variable="jumbotron" type="color" />
+    </set>
+</styles>

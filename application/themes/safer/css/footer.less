@@ -36,6 +36,29 @@ footer#safer {
     color: @footer-heading-color;
   }
 
+  .facebook-icon,
+  .twitter-icon {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .twitter-icon {
+    background-image: url("/application/themes/safer/img/twitter.png");
+    &:hover {
+      background-image: url("/application/themes/safer/img/twitter-rollover.png");
+    }
+  }
+
+  .facebook-icon {
+    background-image: url("/application/themes/safer/img/facebook.png");
+    &:hover {
+      background-image: url("/application/themes/safer/img/facebook-rollover.png");
+    }
+  }
+
   a {
     color: @footer-link-color;
 

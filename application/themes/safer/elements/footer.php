@@ -20,6 +20,12 @@
               $a = new GlobalArea('Footer Third Column');
               $a->display($c);
             ?>
+            <p>
+              <a href="https://twitter.com/safercampus" target="_blank" class="twitter-icon"></a>
+              <a href="https://www.facebook.com/safercampus" target="_blank" class="facebook-icon"></a>
+              <br>
+              <a href="/contact">Contact Us</a>
+            </p>
           </div>
           <div class="col-sm-5">
             <?php

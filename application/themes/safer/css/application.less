@@ -85,7 +85,15 @@ h1, h2, h3 {
   padding-bottom: 8px;
 }
 
-
+// Reduce padding of top nav links
+// When otherwise the links would wrap
+// into two lines (bad).
+@media screen and (max-width: 880px) {
+  .navbar-nav > li > a {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
 
 /* Homepage */
 .jumbotron {

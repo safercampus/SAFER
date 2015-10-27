@@ -38,7 +38,7 @@
 
   <div class="<?=$c->getPageWrapperClass()?>">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button"
               class="navbar-toggle collapsed"
@@ -58,7 +58,7 @@
             <p class="navbar-btn">
               <a class="btn btn-primary" href="/teach-in">Request a teach-in</a>
             </p>
-            <p class="navbar-btn">
+            <p class="navbar-btn extra-margin">
               <a class="btn btn-primary" href="/donate">Donate</a>
             </p>
           </div>

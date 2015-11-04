@@ -23,6 +23,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="/concrete/css/jquery-magnific-popup.css" rel="stylesheet" type="text/css" media="all">
   <link href='//fonts.googleapis.com/css?family=Pompiere|Rokkitt|Roboto+Condensed|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?=$view->getStylesheet('application.less')?>" type='text/css'>

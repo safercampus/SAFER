@@ -71,6 +71,9 @@
 
   </div>
   <? Loader::element('footer_required'); // concrete5 setup  ?>
+
+  <script type="text/javascript" src="/concrete/js/jquery-magnific-popup.js"></script>
+  <script type="text/javascript" src="/concrete/js/lightbox.js"></script>
 </body>
 
 <script type="text/javascript">

@@ -19,9 +19,9 @@
   <set name="SideNav Styles">
     <style name="Side Nav Background Color" variable="side-nav-background" type="color" />
     <style name="Side Nav Active Background Color" variable="side-nav-active-background" type="color" />
-    <style name="Side Nav Font Color" variable="side-nav-font-color" type="color" />
-    <style name="Side Nav Active Font Color" variable="side-nav-active-font-color" type="color" />
-    <style name="Side Nav Width" variable="side-nav" type="spacing" />
+    <style name="Side Nav Font Color" variable="side-nav-font" type="color" />
+    <style name="Side Nav Active Font Color" variable="side-nav-active-font" type="color" />
+    <!-- <style name="Side Nav Width" variable="side-nav" type="size" /> doesn't support percentage -->
   </set>
   <set name="Homepage Styles">
     <style name="Jumbotron (Top of Homepage) Color" variable="jumbotron" type="color" />

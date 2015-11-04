@@ -3,7 +3,7 @@
 <div class="header-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-11 col-md-offset-1">
+      <div class="col-sm-11 col-sm-offset-1">
         <?php
             $a = new Area('Title section');
             $a->display($c);
@@ -13,16 +13,16 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid nav-page">
   <div class="row">
-    <div class="col-md-3" id="sidenav">
+    <div class="col-sm-4" id="sidenav">
       <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="176" data-offset-bottom="291">
         <ul class="nav bs-sidenav">
         </ul>
       </div>
     </div>
 
-    <div class="col-md-9 main-content">
+    <div class="col-sm-8 main-content">
       <?php
           $a = new Area('Content section');
           $a->display($c);

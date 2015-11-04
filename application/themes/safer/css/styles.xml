@@ -1,10 +1,30 @@
 <?xml version="1.0"?>
 <styles version="1.0">
-    <set name="Site Styles">
-        <style name="Button Color" variable="button" type="color" />
-        <style name="Button Font Color" variable="button-font" type="color" />
-        <style name="Footer Heading Color" variable="footer-heading" type="color" />
-        <style name="Footer Link Color" variable="footer-link" type="color" />
-        <style name="Jumbotron (Top of Homepage) Color" variable="jumbotron" type="color" />
-    </set>
+  <set name="Site Styles">
+    <style name="Safer Logo Image" variable="safer-logo" type="image" />
+    <style name="Safer Logo Height Size" variable="safer-logo-height" type="size" />
+    <style name="Safer Logo Width Size" variable="safer-logo-width" type="size" />
+    <style name="Safer Logo Margin Top Size" variable="safer-logo-margin-top" type="size" />
+    <style name="Button Color" variable="button" type="color" />
+    <style name="Button Font Color" variable="button-font" type="color" />
+    <style name="Footer Heading Color" variable="footer-heading" type="color" />
+    <style name="Footer Link Color" variable="footer-link" type="color" />
+    <style name="Footer Link Hover Color" variable="footer-link-hover" type="color" />
+    <style name="Footer Twitter Image" variable="footer-twitter" type="image" />
+    <style name="Footer Twitter Rollover Image" variable="footer-twitter-rollover" type="image" />
+    <style name="Footer Facebook Image" variable="footer-facebook" type="image" />
+    <style name="Footer Facebook Rollover Image" variable="footer-facebook-rollover" type="image" />
+    <style name="Footer Social Size" variable="footer-social" type="size" />
+  </set>
+  <set name="SideNav Styles">
+    <style name="Side Nav Background Color" variable="side-nav-background" type="color" />
+    <style name="Side Nav Active Background Color" variable="side-nav-active-background" type="color" />
+    <style name="Side Nav Font Color" variable="side-nav-font-color" type="color" />
+    <style name="Side Nav Active Font Color" variable="side-nav-active-font-color" type="color" />
+    <style name="Side Nav Width" variable="side-nav" type="spacing" />
+  </set>
+  <set name="Homepage Styles">
+    <style name="Jumbotron (Top of Homepage) Color" variable="jumbotron" type="color" />
+    <style name="Blurb Color" variable="blurb" type="color" />
+  </set>
 </styles>

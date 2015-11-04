@@ -41,21 +41,21 @@ footer#safer {
     background-repeat: no-repeat;
     background-size: 100%;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: @footer-social-size;
+    height: @footer-social-size;
   }
 
   .twitter-icon {
-    background-image: url("/application/themes/safer/img/twitter.png");
+    background-image: url(@footer-twitter-image);
     &:hover {
-      background-image: url("/application/themes/safer/img/twitter-rollover.png");
+      background-image: url(@footer-twitter-rollover-image);
     }
   }
 
   .facebook-icon {
-    background-image: url("/application/themes/safer/img/facebook.png");
+    background-image: url(@footer-facebook-image);
     &:hover {
-      background-image: url("/application/themes/safer/img/facebook-rollover.png");
+      background-image: url(@footer-facebook-rollover-image);
     }
   }
 
@@ -64,7 +64,8 @@ footer#safer {
 
     &:hover {
       text-decoration: none;
-      color: darken(@footer-link-color, 15%)
+      color: @footer-link-hover-color;
+      // color: darken(@footer-link-color, 15%)
     }
   }
 

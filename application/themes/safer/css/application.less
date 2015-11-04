@@ -61,9 +61,13 @@ h1, h2, h3 {
 }
 
 .logo {
+  background-image: url(@safer-logo-image) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: inline-block !important;
-  height: 45px;
-  margin-top: 7px;
+  height: @safer-logo-height-size;
+  width: @safer-logo-width-size;
+  margin-top: @safer-logo-margin-top-size;
   margin-left: 15px;
 }
 
@@ -147,6 +151,7 @@ h1, h2, h3 {
     margin-bottom: 30px;
     float: none;
     vertical-align: top;
+    color: @blurb-color;
 
     .button-container {
       width: 100%;
@@ -178,7 +183,7 @@ h1, h2, h3 {
 /* Content */
 .header-section {
   padding-top: 30px;
-  @media screen and (min-width: @medium-screen) {
+  @media screen and (min-width: @small-screen) {
     // Fix height of header section when sidenav is moveable
     & {
       height: 175px;
@@ -331,4 +336,21 @@ html.ccm-toolbar-visible {
   margin-bottom: 30px;
   .border-radius(4px);
   .box-shadow(0 1px 10px #a7a7a7);
+}
+
+// Concrete5's lightbox use for reports
+.mfp-content {
+  height: 100%;
+  width: 100%;
+  max-width: none!important;
+  max-height: none!important;
+}
+
+.mfp-iframe-holder {
+  padding: 40px!important;
+}
+
+.report-link {
+  padding: 20px;
+  display: inline-block;
 }

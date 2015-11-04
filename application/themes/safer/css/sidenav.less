@@ -1,5 +1,16 @@
 @import "includer";
 
+.nav-page {
+  @media (min-width: @small-screen) {
+    #sidenav {
+      width: @side-nav-spacing;
+    }
+    .main-content {
+      width: 100 - @side-nav-spacing;
+    }
+  }
+}
+
 #sidenav {
   .bs-sidebar.affix {
     position: static;
@@ -20,27 +31,28 @@
     padding-top:    10px;
     padding-bottom: 10px;
     text-shadow: 0 1px 0 #fff;
-    background-color: #f8f9fa;
+    background-color: @side-nav-background-color;
+
     .border-radius(5px);
   }
 
   /* All levels of nav */
   .bs-sidebar .nav > li > a {
     display: block;
-    color: #716b7a;
+    color: @side-nav-font-color;
     padding: 5px 20px;
   }
   .bs-sidebar .nav > li > a:hover,
   .bs-sidebar .nav > li > a:focus {
     text-decoration: none;
-    background-color: #e4e9ec;
+    background-color: @side-nav-active-background-color;
     border-right: 1px solid #dbd8e0;
   }
   .bs-sidebar .nav > .active > a,
   .bs-sidebar .nav > .active:hover > a,
   .bs-sidebar .nav > .active:focus > a {
     font-weight: bold;
-    color: #175676;
+    color: @side-nav-active-font-color;
     background-color: transparent;
     border-right: 1px solid #563d7c;
   }
@@ -59,7 +71,7 @@
 
 
   /* Show and affix the side nav when space allows it */
-  @media (min-width: @medium-screen) {
+  @media (min-width: @small-screen) {
     .bs-sidebar .nav .nav {
       display: none; // Hide sub when scrolling
     }
@@ -88,7 +100,7 @@
   }
 }
 
-@media (min-width: @medium-screen) {
+@media (min-width: @small-screen) {
   html.ccm-toolbar-visible {
     .bs-sidebar.affix {
       top: 118px !important;

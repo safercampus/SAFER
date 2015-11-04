@@ -52,7 +52,7 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img alt="SAFER logo" class="logo" src="<?=$view->getThemePath()?>/img/SAFER bullhorn logo.png">
+            <div class="logo"></div>
           </a>
           <div class="pull-right visible-xs">
             <p class="navbar-btn">

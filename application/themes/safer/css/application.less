@@ -42,16 +42,12 @@ h1, h2, h3 {
     display: inline-block;
   }
 
-  .extra-margin {
-    margin-left: 10px;
-  }
 }
 
 .navbar-default .navbar-brand {
   color: #56A7E9;
   padding: 0px;
   margin-top: -5px;
-  margin-left: 15px;
 
   @media screen and (min-width: @small-screen) {
     & {
@@ -68,7 +64,13 @@ h1, h2, h3 {
   height: @safer-logo-height-size;
   width: @safer-logo-width-size;
   margin-top: @safer-logo-margin-top-size;
-  margin-left: 15px;
+  margin-left: 4px;
+
+  @media screen and (min-width: @small-screen) {
+    & {
+      margin-left: 15px;
+    }
+  }
 }
 
 .page-logo {
@@ -103,6 +105,13 @@ h1, h2, h3 {
 .jumbotron {
   margin-bottom: 0px;
   color: @jumbotron-color;
+  padding-bottom: 0px;
+
+  @media screen and (min-width: @small-screen) {
+    & {
+      padding-bottom: 30px!important;
+    }
+  }
 
   .big-safer {
     font-size: 100px;
@@ -112,10 +121,13 @@ h1, h2, h3 {
     font-weight: bold;
     float: left;
     font-family: 'Pompiere', cursive;
-    line-height: 17px;
+    padding-bottom: 30px;
+    line-height: 26px;
+
     @media screen and (min-width: @medium-screen) {
       & {
-        line-height: 55px;
+        line-height: 66px;
+        padding-bottom: 0px;
       }
     }
   }
@@ -123,6 +135,9 @@ h1, h2, h3 {
   h1 {
     font-size: 46px;
     margin-bottom: 16px;
+    strong {
+      vertical-align: middle;
+    }
   }
 
   @media screen and (min-width: @small-screen) {
